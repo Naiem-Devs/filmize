@@ -209,7 +209,7 @@
     display: block;
 }
 .owl-carousel:hover .owl-nav i {opacity: 1;}
-.hero__item {height: 100vh;display: flex;}
+.hero__item {height: 100vh;display: flex;background-size: cover;background-position: center;}
 
 .hero__item .duration-wrp {
     font-size: 20px;
