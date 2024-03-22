@@ -1,0 +1,530 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .title__top ul a {
+        width: max-content;
+    }
+    
+    .title__top {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .footer__content h3,.footer__nav h3 {
+        font-size: 24px;
+    }
+    .menu-area nav ul li a {
+        font-size: 18px;
+    }
+    
+    .menu-area nav ul {
+        gap: 30px;
+    }
+    
+    .hero__item h1 {
+        font-size: 42px;
+    }
+    
+    .hero__item .container > p {
+        font-size: 18px;
+        max-width: 696px;
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    h3{
+        font-size: 24px;
+    }
+    .title__top ul a {
+        width: max-content;
+        font-size: 14px;
+    }
+    
+    .title__top {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .footer__content h3,.footer__nav h3 {
+        font-size: 24px;
+    }
+    .menu-area nav ul li a {
+        font-size: 16px;
+    }
+    
+    .menu-area nav ul {
+        gap: 30px;
+        margin-left: -35px;
+    }
+    
+    .hero__item h1 {
+        font-size: 36px;
+    }
+    
+    .hero__item .container > p {
+        font-size: 16px;
+        max-width: 620px;
+    }
+    .title__top ul{
+    gap: 10px;
+}
+.logo-area {
+    max-width: 150px;
+}
+
+.header__icon ul li a img {
+    max-width: 24px;
+    height: 24px;
+}
+
+.header__icon ul li a {
+    height: 48px;
+}
+
+.userBtn {
+    width: 50px;
+    height: 27px;
+    margin: 0;
+}
+
+.hero__item .duration-wrp {
+    font-size: 16px;
+    max-width: 380px;
+}
+
+.border__btn {
+    padding: 12px 24px;
+}
+
+.hero__item__btn a {
+    font-size: 16px;
+}
+
+.play__btn img {
+    max-width: 68px;
+}
+
+.movie__blk > p {
+    font-size: 15px;
+}
+
+.filter__blk {
+    padding: 30px 20px;
+}
+
+.pagiNav ul li a {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.trailer__tab__btn a > i {
+    height: 120px;
+}
+
+.trailer__tab__content {
+    height: 349px;
+}
+.trailer-area{
+    padding: 60px 0 0;
+}
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    :root{
+
+      
+        --f18 : 15px;
+        --f20 : 16px;
+        --f22 : 18px;
+        --f24 : 20px;
+        --f28 : 22px;
+        --f30 : 23px;
+        --f32 : 24px;
+        --f36 : 26px;
+        --f40 : 30px;
+        --f48 : 32px;
+        --f60 : 40px;
+      
+      }
+      .header-area{
+    padding: 20px 0;
+}
+      .menu-area {
+        display: none;
+    }
+    .only__mobile{
+    display: block;
+}
+    .title__top ul a {
+        width: max-content;
+        font-size: 14px;
+    }
+    
+    .title__top {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__content h3,.footer__nav h3 {
+        font-size: 20px;
+    }
+
+.footer__logo {
+    max-width: 150px;
+}
+    .menu-area nav ul li a {
+        font-size: 16px;
+    }
+    
+    .menu-area nav ul {
+        gap: 30px;
+        margin-left: -35px;
+    }
+    
+    .hero__item h1 {
+        font-size: 36px;
+    }
+    
+    .hero__item .container > p {
+        font-size: 16px;
+        max-width: 620px;
+    }
+    .title__top ul{
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo-area {
+    max-width: 150px;
+}
+
+.header__icon ul li a img {
+    max-width: 30px;
+    height: 30px;
+}
+
+.header__icon ul li a {
+    height: 48px;
+}
+
+.userBtn {
+    width: 50px;
+    height: 27px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.userBtn img {
+    max-width: 24px !important;
+    height: 24px !important;
+}
+
+.hero__item .duration-wrp {
+    font-size: 16px;
+    max-width: 380px;
+}
+
+.border__btn {
+    padding: 12px 24px;
+}
+
+.hero__item__btn a {
+    font-size: 16px;
+}
+
+.play__btn img {
+    max-width: 68px;
+}
+
+.movie__blk > p {
+    font-size: 15px;
+}
+
+.filter__blk {
+    padding: 30px 20px;
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.pagiNav ul li a {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.trailer__tab__btn a > i {
+    height: 120px;
+}
+
+.trailer__tab__content {
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+}
+.trailer-area{
+    padding: 60px 0 0;
+}
+
+section.trailer-area .title__top {
+    justify-content: space-between;
+    max-width: 600px;
+    margin-inline: auto;
+}
+.finding__content h3 {
+    text-align: center;
+}
+
+.trailer__tab__btn {
+    max-width: 599px;
+    margin: auto;
+    margin-top: 30px;
+}
+.footer__nav {
+    margin-left: -30px;
+}
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    :root{
+
+      
+        --f18 : 15px;
+        --f20 : 16px;
+        --f22 : 18px;
+        --f24 : 20px;
+        --f28 : 22px;
+        --f30 : 23px;
+        --f32 : 24px;
+        --f36 : 26px;
+        --f40 : 30px;
+        --f48 : 32px;
+        --f60 : 40px;
+      
+      }
+      .header-area{
+    padding: 20px 0;
+}
+      .menu-area {
+        display: none;
+    }
+    .only__mobile{
+    display: block;
+}
+    .title__top ul a {
+        width: max-content;
+        font-size: 14px;
+    }
+    
+    .title__top {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer__content h3,.footer__nav h3 {
+        font-size: 18px;
+    }
+
+.footer__logo {
+    max-width: 130px;
+    margin-inline: auto;
+}
+    .menu-area nav ul li a {
+        font-size: 16px;
+    }
+    
+    .menu-area nav ul {
+        gap: 30px;
+        margin-left: -35px;
+    }
+    
+    .hero__item h1 {
+        font-size: 24px;
+    }
+    
+    .hero__item .container > p {
+        font-size: 16px;
+        max-width: 620px;
+    }
+    .title__top ul{
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo-area {
+    max-width: 124px;
+}
+
+.header__icon ul li a img {
+    max-width: 30px;
+    height: 30px;
+}
+
+.header__icon ul li a {
+    height: 48px;
+}
+
+.userBtn {
+    width: 50px;
+    height: 27px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.userBtn img {
+    max-width: 24px !important;
+    height: 24px !important;
+}
+
+.hero__item .duration-wrp {
+    font-size: 16px;
+    max-width: 380px;
+    margin-inline: auto;
+}
+
+.border__btn {
+    padding: 12px 24px;
+}
+
+.hero__item__btn a {
+    font-size: 16px;
+}
+
+.play__btn img {
+    max-width: 68px;
+}
+
+.movie__blk > p {
+    font-size: 15px;
+}
+
+.filter__blk {
+    padding: 30px 20px;
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.pagiNav ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.trailer__tab__btn a > i {
+    height: 70px;
+    min-width: 120px;
+    border-radius: 10px;
+    max-width: 122px;
+}
+
+.trailer__tab__btn a .duration-wrp {
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 220px;
+    gap: 10px;
+}
+
+.trailer__tab__btn a .duration-wrp h5 {
+    flex-basis: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.trailer__tab__btn a {
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trailer__tab__content {
+    height: 202px;
+    max-width: 350px;
+    margin: auto;
+}
+.trailer-area{
+    padding: 60px 0 0px;
+}
+
+section.trailer-area .title__top {
+}
+.finding__content h3 {
+    text-align: center;
+}
+
+.trailer__tab__btn {
+    max-width: 599px;
+    margin: auto;
+    margin-top: 30px;
+}
+.footer__nav {text-align: center;}
+.hero__item__btn {
+    flex-direction: column;
+}
+
+
+.hero__item {
+    min-height: 680px;
+    text-align: center;
+}
+
+.movie__slider {
+    max-width: 265px;
+    margin-inline: auto;
+}
+.footer__content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer__content a {
+    font-size: 14px;
+    margin: auto;
+}
+
+.footer__content p {
+    margin-inline: auto;
+}
+.finding__wrp .movie__blk {
+    max-width: 260px;
+    margin-inline: auto;
+}
+.hero__slider .owl-dots {
+    bottom: 35px;
+    right: 120px;
+}
+
+.hero__slider .owl-nav {
+    bottom: 25px;
+}
+
+.owl-nav i {
+    width: 40px;
+    height: 40px;
+}
+
+.owl-nav i img {
+    width: 9px;
+}
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
