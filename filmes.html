@@ -1,0 +1,910 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>filmes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/nice-select.css"> 
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area ">
+        <div class="container lg">
+            <div class="row ">
+                <div class="col-lg-3 col-6 ">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-6 only__mobile">
+                    <div class="bar__icon">
+                        <a class="humbergar siteBar-btn" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 ">
+                    <div class="menu-area">
+                        <nav>
+                            <ul id="nav">
+                                <li><a href="#" >Início</a></li>
+                                <li><a href="#" class="active">Filmes</a></li> 
+                                <li><a href="#">Séries</a></li> 
+                                <li><a href="#">Animes</a></li>  
+                                <li><a href="#">Documentários</a></li>  
+                                <li><a href="#">Aplicativo</a></li>  
+                            </ul>
+                        </nav>
+                        <div class="header__icon">
+                            <ul>
+                                <li><a href="#" class="srcBtn"><img src="assets/img/src.png" alt=""></a></li>
+                                <li><a href="#" class="notifiBtn"><img src="assets/img/notificacao.png" alt=""></a></li>
+                                <li><a href="#" class="userBtn"><img src="assets/img/conta.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- mobile-menu START -->
+        <div class="mobile-menu">
+            <a href="#" class="bars closeBtn siteBar-btn"><svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+            </svg></a> 
+            <div class="header__icon">
+                <ul>
+                    <li><a href="#" class="userBtn"><img src="assets/img/conta.png" alt=""></a></li>
+                    <li><a href="#" class="notifiBtn"><img src="assets/img/notificacao.png" alt=""></a></li>
+                    <li><a href="#" class="srcBtn"><img src="assets/img/src.png" alt=""></a></li>
+                </ul>
+            </div>
+            <nav> 
+                <ul id="nav">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Filmes</a></li> 
+                    <li><a href="#">Séries</a></li> 
+                    <li><a href="#">Animes</a></li>  
+                    <li><a href="#">Documentários</a></li>  
+                    <li><a href="#">Aplicativo</a></li>  
+                </ul>
+            </nav> 
+        </div> 
+    <!-- header-area END -->
+
+
+    <main class="filmes-page">
+
+
+        <!---------finding Section START ---------->
+        <section class="finding-area sec__padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="finding__content">
+                            <h3>Encontre o que você quiser</h3>
+                            <div class="filter__blk">
+                                <div class="src__blk input__blk">
+                                    <input type="text" placeholder="Pesquise por título ou elenco">
+                                    <a href="#"><img src="assets/img/src.png" alt=""></a>
+                                </div>
+                                <div class="multi__range__blk">
+                                    <label for="">Ano de lançamento</label>
+                                    <div class="wrapper multi__range">
+                                        <div class="rangeSlider">
+                                            <div class="slider-track"></div>
+                                            <input type="range" min="0" max="2022" value="1000" id="slider-1" oninput="slideOne()">
+                                            <input type="range" min="0" max="2022" value="2022" id="slider-2" oninput="slideTwo()">
+                                        </div>
+                                        <div class="values">
+                                            <span id="range1">
+                                                0
+                                            </span>
+                                            <span> &dash; </span>
+                                            <span id="range2">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select__blk">
+                                    <label for="">Categoria</label>
+                                    <select class="wide">
+                                        <option data-display="Todas">Todas</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                                <div class="select__blk">
+                                    <label for="">Coleções</label>
+                                    <select class="wide">
+                                        <option data-display="Nenhuma">Nenhuma</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                                <div class="select__blk">
+                                    <label for="">Classificar por</label>
+                                    <select class="wide">
+                                        <option data-display="Ano">Ano</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                                <div class="select__blk">
+                                    <label for="">Ordenar por</label>
+                                    <select class="wide">
+                                        <option data-display="Melhor avaliado">Melhor avaliado</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                                <div class="select__blk">
+                                    <label for="">Ordenar por</label>
+                                    <select class="wide">
+                                        <option data-display="Ordem crescente">Ordem crescente</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="finding__wrp">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-1.png" alt="">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-2.png" alt="">
+                                        <p>Cidade Perdida</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Cidade Perdida</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-3.png" alt="">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Sonic 2: O Filme</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-4.png" alt="">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-1.png" alt="">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-2.png" alt="">
+                                        <p>Cidade Perdida</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Cidade Perdida</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-3.png" alt="">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Sonic 2: O Filme</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="movie__blk">
+                                        <img src="assets/img/movie-img-4.png" alt="">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="hiden__info">
+                                            <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                            <div class="movie__info">
+                                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                                <div class="duration-wrp">
+                                                    <ul>
+                                                        <li><img src="assets/img/star.png" alt=""></li>
+                                                        <li><span>7.7</span></li>
+                                                    </ul>
+                                                    <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                                    <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="pagiNav">
+                                        <ul>
+                                            <li><a href="#">...</a></li>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">...</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------find Section End ---------->
+
+        <!---------movie Section START ---------->
+        <section class="movie-area">
+            <div class="container">
+                <div class="row mb_50">
+                    <div class="col-lg-12">
+                        <div class="title__top">
+                            <h3>Recomendados para você</h3>
+                            <ul>
+                                <li><a href="#">Lançamentos</a></li>
+                                <li><a href="#">Novos na Filmize</a></li>
+                                <li><a href="#" class="active">Populares</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="movie__wrp ">
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-1.png" alt="">
+                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-2.png" alt="">
+                                <p>Cidade Perdida</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Cidade Perdida</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-3.png" alt="">
+                                <p>Sonic 2: O Filme</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-4.png" alt="">
+                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-5.png" alt="">
+                                <p>Morbius </p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Morbius</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-1.png" alt="">
+                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-2.png" alt="">
+                                <p>Cidade Perdida</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Cidade Perdida</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-3.png" alt="">
+                                <p>Sonic 2: O Filme</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-4.png" alt="">
+                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-5.png" alt="">
+                                <p>Morbius </p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Morbius</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-1.png" alt="">
+                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-2.png" alt="">
+                                <p>Cidade Perdida</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Cidade Perdida</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-3.png" alt="">
+                                <p>Sonic 2: O Filme</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-4.png" alt="">
+                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-5.png" alt="">
+                                <p>Morbius </p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Morbius</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 ">
+                        <div class="pagiNav pt_50">
+                            <ul>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------movie Section End ---------->
+
+
+        <!---------movie Section START ---------->
+        <section class="movie-area v2">
+            <div class="container">
+                <div class="row mb_50">
+                    <div class="col-lg-12">
+                        <div class="title__top">
+                            <h3>Filmes lançamentos de 2023</h3>
+                            <a href="#" class="more__btn v2">Ver todas</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="movie__slider owl-carousel">
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-1.png" alt="">
+                                <p>Doutor Estranho no Multiverso da Loucura</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Doutor Estranho no Multiverso da Loucura</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-2.png" alt="">
+                                <p>Cidade Perdida</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Cidade Perdida</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-3.png" alt="">
+                                <p>Sonic 2: O Filme</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Sonic 2: O Filme</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-4.png" alt="">
+                                <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Animais Fantásticos: Os Segredos de Dumb...</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-5.png" alt="">
+                                <p>Morbius </p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Morbius</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-6.png" alt="">
+                                <p>Matrix: Resurrections</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Matrix: Resurrections</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie__blk">
+                                <img src="assets/img/movie-img-6.png" alt="">
+                                <p>Matrix: Resurrections</p>
+                                <div class="hiden__info">
+                                    <a href="#" ><img src="assets/img/play.png" alt=""></a>
+                                    <div class="movie__info">
+                                        <p>Matrix: Resurrections</p>
+                                        <div class="duration-wrp">
+                                            <ul>
+                                                <li><img src="assets/img/star.png" alt=""></li>
+                                                <li><span>7.7</span></li>
+                                            </ul>
+                                            <p><img src="assets/img/clock-sm.png" alt=""> 2h06min</p>
+                                            <p><img src="assets/img/calendar-1.png" alt=""> 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------movie Section End ---------->
+        
+
+
+    </main>
+
+        <!---------footer Section START ---------->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 ">
+                        <div class="footer__logo">
+                            <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="footer__content">
+                            <h3>Aplicativo Filmize</h3>
+                            <a href="#" class="thm_btn"><img src="assets/img/android.png" alt=""> Baixar aplicativo</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-5">
+                        <div class="footer__content">
+                            <h3>Mídias Sociais </h3>
+                            <a href="#" class="thm_btn"><img src="assets/img/instagram.png" alt=""> Seguir no insta</a>
+                            <p>As novidade sobre filmes e séries pra você se atualizar</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-3">
+                        <div class="footer__nav">
+                            <h3>Destaques</h3>
+                            <ul>
+                                <li><a href="#">Minha conta</a></li>
+                                <li><a href="#">Suporte e FAQ</a></li>
+                                <li><a href="#">Politica DMCA</a></li>
+                                <li><a href="#">Termos e condições</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer__btm">
+                            <p>Aviso: O Filmize apenas indexa conteúdo encontrado na web automaticamente usando Robots e Inteligência artificial com ajuda de APIs
+                                públicas do TMDB, IMDB e outras. O uso do Filmize é totalmente responsabilidade do usuário. A distribuição de vídeos é da parte de
+                                plataformas como mystream, fembed entre outros. Qualquer violação de direitos autorais, entre em contato diretamente com o distribuidor.
+                                Em caso de dúvidas ou reclamações sobre conteúdo, funcionalidade do site, anúncios entre outros, entre em contato com a nossa equipe
+                                de suporte através do email: filmizetrailers@proton.me
+                            </p>
+                            <b><a href="#">© Copyright Todos os Direitos Reservados a Filmize LLC - 2022</a></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---------footer Section End ---------->
+           
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/aos.js"></script> 
+        <script src="assets/js/jquery.nice-select.min.js"></script> 
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/main.js"></script>
+
+
+<script>
+
+
+// {finding-Section} Fin Multi range Slider active
+
+    window.onload = function(){
+    slideOne();
+    slideTwo();
+}
+
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.textContent = sliderOne.value;
+    fillColor();
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = sliderTwo.value;
+    fillColor();
+}
+function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #9300FF ${percent1}% , #9300FF ${percent2}%, #dadae5 ${percent2}%)`;
+}
+</script>
+    </body>
+</html>
+
+

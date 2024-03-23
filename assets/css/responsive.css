@@ -8,6 +8,18 @@
         flex-wrap: wrap;
         gap: 20px;
     }
+
+.atores__title {
+    justify-content: center !important;
+    gap: 10px;
+    flex-direction: column !important;
+}
+
+.profile__wrp .title__top ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
     
     .footer__content h3,.footer__nav h3 {
         font-size: 24px;
@@ -28,7 +40,9 @@
         font-size: 18px;
         max-width: 696px;
     }
-
+    .profile__wrp .col-xl-3 {
+        width: 33.3%;
+    }
 }
 
 
@@ -46,6 +60,17 @@
         flex-wrap: wrap;
         gap: 20px;
     }
+
+.atores__title {
+    justify-content: center !important;
+    gap: 10px;
+    flex-direction: column !important;
+}
+
+.profile__wrp .title__top ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
     
     .footer__content h3,.footer__nav h3 {
         font-size: 24px;
@@ -131,6 +156,55 @@
     padding: 60px 0 0;
 }
 
+.movie__wrp .movie__blk {
+    width: calc(25% - 20px);
+}
+.sec__padding{
+    padding: 70px 0;
+}
+.profile__content {
+    max-width: 380px;
+}
+.user__info.v2 h3 {
+    font-size: 20px;
+}
+
+.user__info.v2 p {
+    font-size: 13px;
+    margin-right: -10px;
+}
+
+.user__info.v2 p b {
+    font-size: 13px;
+}
+
+.user__info > b {
+    font-size: 15px;
+}
+.filme__img {
+    max-width: 340px;
+}
+
+.filme__content {
+    margin-left: -50px;
+}
+
+.icon__link {
+    width: 48px;
+    height: 48px;
+    border-width: 1px;
+}
+
+.icon__link img {
+    max-width: 24px;
+}
+.filme__wrp {
+    padding-top: 80px;
+}
+
+.Comment__text {
+    padding-left: 20px;
+}
 }
 
  
@@ -192,6 +266,10 @@
     .hero__item h1 {
         font-size: 36px;
     }
+
+.filme__content > h1 {
+    font-size: 30px;
+}
     
     .hero__item .container > p {
         font-size: 16px;
@@ -291,6 +369,63 @@ section.trailer-area .title__top {
 .footer__nav {
     margin-left: -30px;
 }
+.movie__wrp .movie__blk {
+    width: calc(33% - 14px);
+}
+.sec__padding{
+    padding: 70px 0;
+}
+.movie__slider:after{
+    width: 217px;
+}
+
+.profile__content {
+    height: auto;
+    padding: 30px;
+    max-width: 450px;
+    margin-inline: auto;
+}
+.profile__flex {
+    flex-direction: column;
+}
+
+.user__blk {
+    flex-direction: column;
+    text-align: center;
+}
+.filme__img {
+    max-width: 340px;
+}
+
+.filme__content {
+}
+
+.filme__content .hero__item__btn {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: -20px;
+    /* justify-content: center; */
+}
+
+.icon__link {
+    width: 48px;
+    height: 48px;
+    border-width: 1px;
+}
+
+.icon__link img {
+    max-width: 24px;
+}
+.filme__wrp {
+    padding-top: 80px;
+}
+
+.Comment__text {
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+
 }
 
  
@@ -298,20 +433,29 @@ section.trailer-area .title__top {
 @media (max-width: 767px) {
     :root{
 
-      
-        --f18 : 15px;
-        --f20 : 16px;
-        --f22 : 18px;
-        --f24 : 20px;
-        --f28 : 22px;
-        --f30 : 23px;
-        --f32 : 24px;
-        --f36 : 26px;
-        --f40 : 30px;
-        --f48 : 32px;
-        --f60 : 40px;
-      
-      }
+--f18 : 15px;
+
+--f20 : 16px;
+
+--f22 : 18px;
+
+--f24 : 20px;
+
+--f28 : 22px;
+
+--f30: 22px;
+
+--f32 : 24px;
+
+--f36 : 26px;
+
+--f40 : 30px;
+
+--f48 : 32px;
+
+--f60 : 40px;
+
+}
       .header-area{
     padding: 20px 0;
 }
@@ -333,6 +477,13 @@ section.trailer-area .title__top {
         align-items: center;
         text-align: center;
     }
+
+.title__top.atores__title {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+}
     
     .footer__content h3,.footer__nav h3 {
         font-size: 18px;
@@ -461,8 +612,6 @@ section.trailer-area .title__top {
     padding: 60px 0 0px;
 }
 
-section.trailer-area .title__top {
-}
 .finding__content h3 {
     text-align: center;
 }
@@ -486,6 +635,10 @@ section.trailer-area .title__top {
 .movie__slider {
     max-width: 265px;
     margin-inline: auto;
+}
+
+.movie__slider:after {
+    display: none;
 }
 .footer__content {
     text-align: center;
@@ -521,10 +674,141 @@ section.trailer-area .title__top {
 .owl-nav i img {
     width: 9px;
 }
+
+.movie__wrp .movie__blk {
+    width: 100%;
+    max-width: 250px;
+    margin-inline: auto;
+}
+.sec__padding{
+    padding: 60px 0;
+}
+
+.filmes-page .finding-area{
+    padding-top: 30px;
+}
+
+.filmes-page .movie-area .container {
+    width: 100%;
+    max-width: 570px;
+}
+.profile__content {
+    height: auto;
+    padding: 30px 20px;
+    max-width: 100%;
+    margin-inline: auto;
+}
+.profile-area{
+    margin: 20px 0 0;
+}
+.profile__flex {
+    flex-direction: column;
+}
+
+.user__blk {
+    flex-direction: column;
+    text-align: center;
+}
+.profile__wrp .row {
+    gap: 20px 0;
+}
+.profile__wrp .movie__blk {
+    max-width: 260px;
+    margin-inline: auto;
+}
+
+.filme__hero .hero__item{
+    height: auto;
+}
+
+.filme__img {
+    max-width: 248px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.filme__content {
+}
+
+.filme__content .hero__item__btn {
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    margin-right: -20px;
+    flex-direction: row;
+    max-width: 230px;
+    margin: auto;
+    justify-content: center;
+}
+
+.icon__link {
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+}
+
+.icon__link img {
+    max-width: 20px;
+}
+.filme__wrp {
+    padding-top: 110px;
+}
+
+.Comment__text {
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.filme__content > p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.Comment__btns {
+    flex-direction: column-reverse;
+    align-items: start;
+}
+
+.Comment__btns .thm_btn {
+    margin: auto;
+}
+
+.sgl__Comment {
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.sgl__Comment i {
+    width: 45px;
+    height: 45px;
+}
+
+.sgl__Comment h6 {
+    margin-bottom: 6px;
+}
+.Comment__box h3 {
+    text-align: center;
+}
+section.Comment-area {
+    margin-top: -30px;
+}
+
 }
  
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+.movie__wrp .movie__blk {
+    margin-inline: auto;
+    width: calc(50% - 13px);
+}
+.profile-area .container {
+    width: 100%;
+}
+
+.profile__wrp .col-xl-3 {
+    width: 50%;
+}
+.profile__wrp .movie__blk {
+    max-width: 100%;
+    margin-inline: auto;
+}
 }

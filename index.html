@@ -1057,6 +1057,25 @@
                                     <input type="text" placeholder="Pesquise por título ou elenco">
                                     <a href="#"><img src="assets/img/src.png" alt=""></a>
                                 </div>
+                                <div class="multi__range__blk">
+                                    <label for="">Ano de lançamento</label>
+                                    <div class="wrapper multi__range">
+                                        <div class="rangeSlider">
+                                            <div class="slider-track"></div>
+                                            <input type="range" min="0" max="2022" value="1000" id="slider-1" oninput="slideOne()">
+                                            <input type="range" min="0" max="2022" value="2022" id="slider-2" oninput="slideTwo()">
+                                        </div>
+                                        <div class="values">
+                                            <span id="range1">
+                                                0
+                                            </span>
+                                            <span> &dash; </span>
+                                            <span id="range2">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="select__blk">
                                     <label for="">Categoria</label>
                                     <select class="wide">
@@ -1734,8 +1753,12 @@
         <script src="assets/js/jquery.nice-select.min.js"></script> 
         <script src="assets/js/owl.carousel.min.js"></script> 
         <script src="assets/js/main.js"></script>
+
+
 <script>
     
+    // {trailer-Section} tab active--------------
+
 function Tabs() {
   var bindAll = function () {
     var menuElements = document.querySelectorAll("[data-tab]");
@@ -1765,6 +1788,45 @@ function Tabs() {
 
 var connectTabs = new Tabs();
 
+</script>
+
+<script>
+
+
+// {finding-Section} Fin Multi range Slider active
+
+    window.onload = function(){
+    slideOne();
+    slideTwo();
+}
+
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.textContent = sliderOne.value;
+    fillColor();
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = sliderTwo.value;
+    fillColor();
+}
+function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #9300FF ${percent1}% , #9300FF ${percent2}%, #dadae5 ${percent2}%)`;
+}
 </script>
     </body>
 </html>

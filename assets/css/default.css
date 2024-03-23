@@ -131,7 +131,8 @@ p {
     }
   
   h4 {
-    font-size: 22px; }
+    font-size: var(--f24);
+    }
   
   h5 {
     font-size: var(--f18);
@@ -462,6 +463,20 @@ p {
     padding: 10px 24px;
     width: max-content;
     gap: 10px;
+    transition: all .3s;
+    justify-content: center;
+}
+
+.thm_btn.active {
+    background: linear-gradient(45deg, #9400ff, #6c00ff) border-box;
+}
+
+.thm_btn.active:hover {
+    background: linear-gradient(249deg, #9400ff, #6c00ff) border-box;
+}
+
+.thm_btn:hover {
+    background: linear-gradient(45deg, #9400ff, #6c00ff) border-box;
 }
 
 .thm_btn:before,.more__btn:before {
@@ -484,5 +499,8 @@ p {
     filter: brightness(3.5) invert(1);
 }
 
+
+
+.boxStyle {background: linear-gradient(45deg, #2d004d, #21004d);padding: 24px 30px;border-radius: 20px;}
 /* default-css END 
 ================================== */
