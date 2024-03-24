@@ -9,7 +9,7 @@ font-family: "Montserrat", sans-serif;
 
     --thmColor: #9500FF;
     --textColor: fff;
-    --gdColor: linear-gradient( 90deg, rgb(108,0,255) 0%, rgb(149,0,255) 100%);
+    --gdColor: linear-gradient( 40deg, #9500ff 0%, #6c00ff 100%);
   
     --f18 : 18px;
     --f20 : 20px;

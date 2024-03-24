@@ -210,9 +210,7 @@
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-    :root{
-
-      
+    :root{ 
         --f18 : 15px;
         --f20 : 16px;
         --f22 : 18px;
@@ -882,9 +880,18 @@ section.content_v_playar.serie_unica{
 .humbergar span:after {
     bottom: -6px;
 }
-
-
-
+.duration-wrp p img {
+    max-width: 15px; 
+}
+.hero__item .duration-wrp {
+    justify-content: center;
+}
+.hero__item .duration-wrp p img {
+    max-width: 14px; 
+}
+.duration-wrp {
+    gap: 15px;
+}
 
 
 
