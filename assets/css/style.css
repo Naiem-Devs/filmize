@@ -146,14 +146,25 @@
 .only__mobile {
     display: none;
 }
+.only__mobile .header__icon {
+    text-align: right;
+}
 
+.only__mobile .header__icon ul {
+    justify-content: flex-end;
+}
+
+.only__mobile .header__icon ul li a.userBtn {
+    margin-right: 20px;
+    margin-left: 10px;
+}
 .mobile-menu {
     position: fixed;
     width: 320px;
     height: 100vh;
     background: #000;
     z-index: 99;
-    box-shadow: 0px 0px 9px -1px #737373;
+    box-shadow:-15px 0px 30px 0px #3b3b3b;
     top: 0;
     left: 0;
     transition: .3s;
@@ -169,7 +180,12 @@
 .siteBar {
     margin-left: 0;
 }
-
+a.mobilelogo {
+    display: block;
+    max-width: 120px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
 .mobile-menu ul#pills-tab {
     margin-top: 90px;
     margin-bottom: 35px !important;
@@ -191,7 +207,7 @@
 .mobile-menu a.bars {
     position: absolute;
     right: 15px;
-    top: 15px;
+    top: 25px;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -235,6 +251,7 @@
 
 .hero__item {
     height: 100vh;
+    min-height: 850px;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -311,7 +328,7 @@
     filter: brightness(0);
 }
 
-.hero__item__btn a {
+.hero__item__btn a,.content_playar_contents a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,7 +446,7 @@
     justify-content: center;
     border: 1px solid #fff;
     border-radius: 50%;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all .3s;
 }
 
@@ -561,7 +578,7 @@
 }
 
 
-.title__top ul a:hover:before {
+.title__top ul a:hover:before,.title__top ul a.active:before {
     opacity: 0;
 }
 
@@ -731,6 +748,7 @@
     position: relative;
     margin: auto;
     font-size: 12px;
+    width: 70px;
     color: #ffffff;
     font-weight: 700;
     flex-shrink: 0;
@@ -1291,6 +1309,148 @@
     filter: brightness( 2) invert(1);
 }
 /*============Comment Area End =============*/
+
+
+
+/*============ Content_v_playar Area Start =============*/
+.hero__item.withoverlapping{
+    height: unset;
+    min-height: unset;
+    padding-bottom: 300px;
+}
+.content_playar_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border: 2px solid var(--thmColor);
+    border-radius: 20px;
+}
+section.content_v_playar {
+    margin-top: -100px;
+}
+.content_playar_contents > div {
+    text-align: center;
+    max-width: 640px;
+}
+
+.content_playar_contents > div h2 {
+    margin-bottom: 0px;
+    font-weight: 800;
+    font-size: var(--f40);
+}
+
+.content_playar_contents > div a.play__btn {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.content_playar_filter .title__top {
+    display: block;
+}
+
+.content_playar_filter .title__top h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.content_playar_filter .title__top ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.content_playar_filter .title__top ul li,.content_playar_filter .title__top ul li a {
+    width: 100%;
+    text-align: center;
+}
+
+.content_playar_filter .filter__blk > p a {
+    font-weight: 700;
+}
+
+
+
+
+
+
+/*============ Content_v_playar Area End =============*/
+
+
+
+/*============ Serie_Unica Area Start =============*/
+section.content_v_playar.serie_unica {
+    margin-top: 100px;
+}
+
+section.content_v_playar.serie_unica .content_playar_contents > div h2 span {
+    display: block;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #7100ff 0%, #8e00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.content_v_playar.serie_unica .content_playar_filter .title__top ul.should_flex li {width: 48%;}
+
+section.content_v_playar.serie_unica .content_playar_filter .title__top ul.should_flex {
+    justify-content: space-between;
+    gap: 10px;
+}
+.series_videos {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #2d004d, #23014e);
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.series_videos .select__blk {
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-right: 30px;
+}
+
+.series_videos  h6 {
+    margin-bottom: 20px;
+}
+
+.series_videos .select__blk .nice-select.wide {
+    background: var(--gdColor);
+}
+
+.serie_unica_series_slides .owl-nav {
+    top: 32%;
+    width: 100%;
+}
+.series_videos:after,.serie_unica_series_slides:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(270deg, #000000, #000000c7, transparent);
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.serie_unica_series_slides:after {
+    z-index: 2;
+}
+
+
+
+
+
+
+/*============ Serie_Unica Area END =============*/
+ 
+
 
 
 

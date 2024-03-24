@@ -424,6 +424,23 @@ section.trailer-area .title__top {
     padding-left: 20px;
     margin-top: 40px;
 }
+.hero__item.withoverlapping { 
+    padding-bottom: 230px;
+    padding-top: 50px;
+}
+
+section.content_v_playar.serie_unica .content_playar_filter .title__top ul.should_flex li{
+    width: 100%;
+}
+.series_videos .select__blk {
+    height: 80px; 
+    padding-right: 0;
+    margin-bottom: 30px;
+}
+section.content_v_playar.serie_unica{
+    margin-top: 50px;
+}
+
 
 
 }
@@ -525,14 +542,18 @@ section.trailer-area .title__top {
 }
 
 .header__icon ul li a {
-    height: 48px;
+    height: 30px;
+    padding: 0;
 }
-
 .userBtn {
     width: 50px;
     height: 27px;
     margin: 0;
     margin-right: 10px;
+}
+.notifiBtn {
+    margin-left: 3px;
+    margin-right: 7px;
 }
 
 .userBtn img {
@@ -541,11 +562,14 @@ section.trailer-area .title__top {
 }
 
 .hero__item .duration-wrp {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 380px;
     margin-inline: auto;
+    flex-wrap: wrap;
 }
-
+.hero__item .duration-wrp p {
+    gap: 5px;
+}
 .border__btn {
     padding: 12px 24px;
 }
@@ -783,6 +807,11 @@ section.trailer-area .title__top {
 
 .sgl__Comment h6 {
     margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.boxStyle { 
+    padding: 20px; 
 }
 .Comment__box h3 {
     text-align: center;
@@ -790,6 +819,79 @@ section.trailer-area .title__top {
 section.Comment-area {
     margin-top: -30px;
 }
+.filme__content > ul{
+    flex-wrap: wrap;
+}
+.hero__item.withoverlapping { 
+    padding-bottom: 200px;
+}
+.content_playar_filter .title__top { 
+    margin: 0;
+}
+.content_playar_contents > div h2 { 
+    font-size: 20px;
+}
+.withoverlapping .filme__content > ul li a { 
+    font-size: 14px;
+}
+.filme__content > ul { 
+    gap: 3px; 
+}
+.duration-wrp ul { 
+    gap: 5px;
+}
+section.content_v_playar.serie_unica .content_playar_filter .title__top ul.should_flex li{
+    width: 100%;
+}
+.series_videos .select__blk {
+    height: 80px; 
+    padding-right: 0;
+    margin-bottom: 30px;
+}
+section.content_v_playar.serie_unica{
+    margin-top: 50px;
+}
+.series_videos { 
+    padding: 20px; 
+}
+.series_videos .select__blk label{
+    margin-bottom: 10px;
+}
+.series_videos:after, .serie_unica_series_slides:after { 
+    width: 100px; 
+    background: linear-gradient(270deg, #000000, transparent); 
+}
+
+.only__mobile .header__icon ul li a.userBtn {
+    margin-right: 10px;
+    margin-left: 0px;
+    height: 30px;
+    width: 30px;
+}
+.only__mobile .header__icon ul li .bar__icon a{
+    height: 30px;
+    padding: 0;
+}
+.humbergar span, .humbergar span:before, .humbergar span:after { 
+    height: 2px;
+    width: 25px; 
+}
+.humbergar span:before {
+    top: -8px;
+}
+.humbergar span:after {
+    bottom: -6px;
+}
+
+
+
+
+
+
+
+
+
+
 
 }
  

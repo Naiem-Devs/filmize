@@ -63,26 +63,29 @@
   });
 
   // owlCarousel
-  $(".brand-active").owlCarousel({
+  $(".serie_unica_series_slides").owlCarousel({
     loop: true,
-    margin: 30,
-    items: 6,
+    margin: 10,
+    items: 4,
     navText: [
       '<i><img src="assets/img/arrow-left.png" alt=""></i>',
       '<i><img src="assets/img/arrow-right.png" alt=""></i>'
     ],
-    nav: false,
+    nav: true,
     dots: false,
     smartSpeed: 1000,
     responsive: {
       0: {
+        items: 1
+      },
+      450: {
         items: 2
       },
       767: {
         items: 3
       },
       992: {
-        items: 6
+        items: 4
       }
     }
   });
