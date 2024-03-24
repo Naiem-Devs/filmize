@@ -893,8 +893,21 @@ section.content_v_playar.serie_unica{
     gap: 15px;
 }
 
+.login__form {
+    padding: 30px 20px;
+}
 
+.login__content > a {
+    margin-bottom: 36px;
+    max-width: 169px;
+}
 
+.login-area {
+    padding: 50px 0;
+}
+.social__btns{
+    gap: 10px;
+}
 
 
 
