@@ -1687,6 +1687,129 @@ section.content_v_playar.serie_unica .content_playar_filter .title__top ul.shoul
 
 
 
-/*============ Area Start =============*/
+/*============ Serie Area Start =============*/
+section.serie-area {
+    min-height: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 100%;
+    background-image: url(../img/serie_unica.png);
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
 
-/*============ Area End =============*/
+section.serie-area .series_videos {
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(13deg, #9004f3 0%, #3b008b 100%);
+}
+
+section.serie-area:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--gdColor);
+    opacity: .6;
+}
+
+section.serie-area .series_videos ul.list {
+    top: unset;
+    bottom: 100%;
+}
+section.serie-area .series_videos:after, section.serie-area .series_videos .serie_unica_series_slides:after { 
+    background: linear-gradient(270deg, #000000fc, #00000069, transparent); 
+}
+section.serie-area .series_videos .hiden__info>a { 
+    max-width: 50px;
+}
+/*============ Serie Area End =============*/
+
+
+
+/*============ Video Area Start =============*/
+.varea{
+    background: url(../img/hero-bg-1.png);
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.varea .content_playar_filter {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.varea .content_playar_filter .filter__blk {
+    padding: 50px;
+    background: linear-gradient(90deg, #9500ff61, #6c00ff66)
+}
+
+.varea .content_playar_filter .title__top ul li a {
+    font-weight: 600;
+    padding: 13px 10px;
+}
+
+.varea a.vflogo {
+    display: block;
+    max-width: 120px;
+    margin: auto;
+}
+.varea a.vflogo img {
+    display: block;
+    width: 100px;
+}
+.varea .title__top {
+    margin: 0;
+} 
+.varea:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--gdColor);
+    opacity: .6;
+}
+
+.varea .content_playar_filter .title__top h3 {
+    font-size: 18px;
+}
+
+.varea ul.should_flex {
+    margin-bottom: 30px;
+}
+.varea .content_playar_filter .title__top ul li a.active {
+    position: relative;
+}
+
+.varea .content_playar_filter .title__top ul li a.active > img {
+    max-width: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+/*============ Video Area End =============*/

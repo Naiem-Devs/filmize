@@ -439,6 +439,10 @@ section.content_v_playar.serie_unica{
     margin-top: 50px;
 }
 
+section.serie-area {
+    min-height: 400px; 
+}
+
 
 
 }
@@ -908,9 +912,16 @@ section.content_v_playar.serie_unica{
 .social__btns{
     gap: 10px;
 }
-
-
-
+section.serie-area {
+    min-height: 400px; 
+}
+.varea .content_playar_filter .filter__blk {
+    padding: 20px;
+    gap: 0px;
+}
+.varea {
+    padding: 30px;
+}
 
 
 }
